@@ -121,3 +121,11 @@ REST_FRAMEWORK = {
     # YOUR SETTINGS
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
+
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_TIMEOUT = 5
+EMAIL_USE_SSL = True
+DEFAULT_FROM_EMAIL = ''

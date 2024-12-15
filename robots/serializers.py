@@ -13,7 +13,7 @@ class RobotSerializer(serializers.ModelSerializer):
 
     def validate_model(self, value):
         try:
-            Robot.objects.get(model=value)
+            Robot.objects.filter(model=value)
         except ValidationError:
             raise serializers.ValidationError("Такой модели робота не существует")
         return value
